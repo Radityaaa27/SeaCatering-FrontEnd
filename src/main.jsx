@@ -6,6 +6,9 @@ import Home from './pages/Home'
 import Menu from './pages/Menu'
 import Subscription from './pages/Subscription'
 import ContactUs from './pages/ContactUs'
+import  Register  from './pages/auth/Register'
+import Login from './pages/auth/Login'
+
 import './index.css'
 
 const router = createBrowserRouter([
@@ -16,7 +19,9 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'menu', element: <Menu /> },
       { path: 'subscription', element: <Subscription /> },
-      { path: 'contact-us', element: <ContactUs /> }
+      { path: 'contact-us', element: <ContactUs /> },
+      {path: 'register', element: <Register/>},
+      {path: 'login', element: <Login />}
     ]
   }
 ])

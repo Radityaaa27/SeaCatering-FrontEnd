@@ -220,8 +220,10 @@ h2 {
   margin-top: 1rem;
   color: black;
   font-size: 1.1rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 /* Menu page styles */
 .menu-page {
   max-width: 1200px;
@@ -501,9 +503,10 @@ h2 {
 }
 
 .contact-info {
-  background-color: #f8f9fa;
+  background-color: var(--light);
+  border: 10px solid var(--primary);
   padding: 2rem;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 2rem;
 }
 
@@ -550,4 +553,95 @@ h2 {
 
 .submit-btn:hover {
   background-color: #1a252f;
+}
+/* Auth Forms */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 2rem;
+}
+
+.auth-card {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-card h2 {
+  color: var(--primary);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-card .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.auth-card label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark);
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.auth-card input:focus {
+  outline: none;
+  border-color: var(--secondary);
+}
+
+.submit-btn {
+  background-color: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+}
+
+.auth-switch {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: var(--dark);
+}
+
+.auth-switch a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.auth-switch a:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: var(--danger);
+  background-color: rgba(231, 76, 60, 0.1);
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
