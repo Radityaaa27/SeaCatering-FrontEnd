@@ -8,6 +8,7 @@ import Subscription from './pages/Subscription'
 import ContactUs from './pages/ContactUs'
 import  Register  from './pages/auth/Register'
 import Login from './pages/auth/Login'
+import Settings from './pages/Settings'
 
 import './index.css'
 
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       { path: 'subscription', element: <Subscription /> },
       { path: 'contact-us', element: <ContactUs /> },
       {path: 'register', element: <Register/>},
-      {path: 'login', element: <Login />}
+      {path: 'login', element: <Login />},
+      {path: 'settings', element: <Settings />}
     ]
   }
 ])
