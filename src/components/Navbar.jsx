@@ -116,7 +116,7 @@ const getProfilePicture = () => {
         </div>
 
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
-          {['Home', 'Menu', 'Subscription', 'Contact Us'].map((item, index) => (
+          {['Home', 'Menu', 'Subscription','Order', 'Contact Us'].map((item, index) => (
             <motion.li
               key={item}
               initial={{ y: -20, opacity: 0 }}

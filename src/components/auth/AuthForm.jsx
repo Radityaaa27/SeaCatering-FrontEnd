@@ -69,7 +69,6 @@ export function LoginForm() {
     </div>
   );
 }
-
 export function RegisterForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -80,19 +79,14 @@ export function RegisterForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    if (password !== confirmPassword) {
-      setError('Passwords do not match');
-      return;
-    }
-
     try {
-      // Replace with your actual API call
+      // Ganti dengan API call sebenarnya
       const response = await fetch('http://127.0.0.1:8000/api/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, email, password : confirmPassword }),
+        body: JSON.stringify({ name, email, password }),
       });
 
       const data = await response.json();
